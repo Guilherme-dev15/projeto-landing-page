@@ -1,0 +1,194 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(0, 0, 0) 0.1%, rgba(0, 0, 0, 0.98) 99.8% );
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+/* Header Styles */
+header {
+    padding: 2rem;
+}
+
+nav,
+#nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+#menu-nav li {
+    margin-right: 2rem;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Home Section Styles */
+.home-informations {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+.introduction-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 1.5rem 0 1.5rem;
+    gap: 3rem;
+}
+
+.introduction-title h1 {
+    font-size: 4.5rem;
+    font-family: 'codec-pro-ultra', sans-serif;
+    font-weight: 800;
+}
+
+.introduction-title p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: start;
+}
+
+.container-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.container-actions button,
+.container-actions a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    border: none;
+    height: 5rem;
+    width: 100%;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container-actions button {
+    background-color: #007cf0b4
+}
+
+.logo-background {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.logo-background img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    .collapse-menu.opened {
+        padding-right: 0;
+    }
+
+    .collapse-menu li {
+        display: block;
+        border-bottom: none;
+    }
+
+    .home-informations {
+        padding-top: 0;
+    }
+
+    .container-actions {
+        margin: 1rem 0;
+    }
+
+    .collapse-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .collapse-menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 3rem;
+    }
+
+    .collapse-menu li {
+        padding: 15px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        border-bottom: 1px solid #888;
+    }
+
+    .collapse-menu a {
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+
+    .collapse-menu a:hover {
+        color: #f1f1f1;
+    }
+
+    .collapse-menu.opened {
+        padding-right: 0;
+    }
+
+}
