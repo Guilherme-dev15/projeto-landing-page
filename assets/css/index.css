@@ -13,7 +13,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(0, 0, 0) 0.1%, rgba(0, 0, 0, 0.98) 99.8% );
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 0, 0) 0.1%, rgba(0, 0, 0, 0.98) 99.8%);
     background-repeat: no-repeat;
     color: #fff;
 }
@@ -53,8 +53,8 @@ nav,
 .home-informations {
     position: relative;
     display: flex;
-    flex-direction: column;
     height: 100vh;
+    flex-direction: column;
     padding: 20px;
 }
 
@@ -106,7 +106,7 @@ nav,
 }
 
 .container-actions button {
-    background-color: #007cf0b4
+    background-color: #f3b700
 }
 
 .logo-background {
@@ -120,8 +120,62 @@ nav,
 .logo-background img {
     max-width: 100%;
     height: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
     object-fit: cover;
 }
+
+
+/*Setion Services Information*/
+.services-informations {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.services-informations .container-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+.services-informations .container-services p:nth-child(1){
+    margin: 4rem 0 5rem 0;
+    font-size: 4rem;
+    text-align: center;
+}
+.services-informations .container-services ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    list-style-type: none;
+}
+
+.services-informations .container-services ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 4rem 3.5rem;
+    gap: 2rem;
+    height: 35.1rem;
+    list-style-type: none;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 0, 0) 0.1%, #f3b700 99.8%);
+    color: #FFFFFF;
+    border-radius: 5rem;
+}
+.container-services ul li h1{
+    font-size: 4rem;
+}
+.container-services ul li p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {

@@ -58,4 +58,5 @@ body {
     align-content: center;
     align-items: flex-start;
     padding-left: 50px;
+    color: #f3b700; /*Cor do logo da colmeia*/
 }
