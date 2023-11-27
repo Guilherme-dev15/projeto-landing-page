@@ -48,7 +48,6 @@ nav,
     z-index: 2;
 }
 
-
 /* Home Section Styles */
 .home-informations {
     position: relative;
@@ -127,7 +126,7 @@ nav,
 }
 
 
-/*Setion Services Information*/
+/* Services Information Section */
 .services-informations {
     position: relative;
     display: flex;
@@ -135,26 +134,26 @@ nav,
     padding: 20px;
 }
 
-.services-informations .container-services {
+.services-informations .container-services-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 0.5rem;
 }
-.services-informations .container-services p:nth-child(1){
+.services-informations .container-services-cards p:nth-child(1){
     margin: 4rem 0 5rem 0;
     font-size: 4rem;
     text-align: center;
 }
-.services-informations .container-services ul {
+.services-informations .container-services-cards ul {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     list-style-type: none;
 }
 
-.services-informations .container-services ul li {
+.services-informations .container-services-cards ul li {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -166,10 +165,10 @@ nav,
     color: #FFFFFF;
     border-radius: 5rem;
 }
-.container-services ul li h1{
+.container-services-cards ul li h1{
     font-size: 4rem;
 }
-.container-services ul li p{
+.container-services-cards ul li p{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 1.5;
@@ -179,6 +178,7 @@ nav,
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
+    /* Estilos para telas menores */
     .menu-icon {
         display: block;
     }
@@ -245,4 +245,57 @@ nav,
         padding-right: 0;
     }
 
+}
+
+
+
+/* Estilos para o reprodutor de áudio */
+.audio-player {
+    text-align: center;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.album-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo para a imagem do álbum */
+.album-cover {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão de play */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    background-image: url('/assets/images/play-svgrepo-com.svg');
+    background-size: cover;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Estilos para a barra de progresso */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #1db954;
+    width: 0;
+    transition: width 0.3s ease-in-out;
 }
