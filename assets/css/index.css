@@ -13,7 +13,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("../assets/images/detailed-dark-grunge-style-texture-background_1048-14598.png");
+    background-image: url("../images/detailed-dark-grunge-style-texture-background_1048-14598.png");
     color: #fff;
 }
 
@@ -280,7 +280,7 @@ nav,
     transform: translate(-50%, -50%);
     width: 25px;
     height: 25px;
-    background-image: url('../assets/images/play-svgrepo-com.svg');
+    background-image: url('../images/play-svgrepo-com.svg');
     background-size: cover;
     cursor: pointer;
     z-index: 1;
