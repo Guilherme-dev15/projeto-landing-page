@@ -264,7 +264,8 @@ nav,
 }
 
 .container-portfolio-cards-client {
-    position: relative; /* Adicionando posição relativa para referência do elemento absoluto */
+    position: relative;
+    /* Adicionando posição relativa para referência do elemento absoluto */
     display: flex;
     justify-content: center;
     align-items: end;
@@ -279,6 +280,7 @@ nav,
     align-items: last baseline;
     max-width: 100%;
 }
+
 .portfolio-music-client video {
     width: 100%;
     height: 66rem;
@@ -289,56 +291,67 @@ nav,
     position: absolute;
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: calc(100% - 6px); /* Ajuste para levar em conta a borda de 3px de cada lado */
-    margin: 1rem;
-    gap: 8rem;
+    gap: 5rem;
+    z-index: 3;
+    
+    /* Ajuste para levar em conta a borda de 3px de cada lado */
     margin-bottom: 3rem;
+    padding: 0 1rem;
 }
 
-.control-video span {
+.control-video button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 1rem;
     height: 4rem;
     width: 4rem;
-    border-radius: 999rem;
+    border: none;
     cursor: pointer;
+    border-radius: 999rem;
 }
 
-/* Estilos adicionais para os ícones, se necessário */
-.control-video span svg {
-    width: 32px;
-    height: 32px;
+/* Estilos para os controles de vídeo */
+.control-video p {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-.control-video p{
-    font-size: 1.5rem;
-}
-
-
-.play-video, .next-video{
+.play-video, .next-video {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    background-color: #f3b700;
+    
+}
+
+/* Estilos para os controles de vídeo */
+.play-video, .next-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f3b700;
 }
 
-.backward-video{
+.backward-video {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     background-color: #000000;
 }
-
-
-.back-next-control, .play-control{
+.back-next-control, .play-control {
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
+
+.back-next-control svg,
+.play-control svg {
+    width: 30px; /* Ajuste a largura conforme necessário */
+    height: 30px; /* Ajuste a altura conforme necessário */
+    /* Você pode adicionar outros estilos ou propriedades aqui conforme necessário */
+}
+
 /* Estilos para o reprodutor de áudio */
 .audio-player {
     text-align: center;
