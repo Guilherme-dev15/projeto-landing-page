@@ -92,3 +92,6 @@ video.addEventListener("ended", function () {
     playIcon.innerHTML = playSVG;
     textPlayVideo.textContent = 'Play Video';
 });
+
+
+
