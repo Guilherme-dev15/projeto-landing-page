@@ -24,11 +24,13 @@ body {
     align-items: center;
     padding: 2rem;
     margin-top: 2rem;
+    
 }
 
 /* Header Styles */
 .header {
-    padding: 2rem;  
+    padding: 2rem;
+    
 }
 
 .header__menu-icon {
@@ -190,10 +192,7 @@ body {
     width: 100%;
     gap: 4rem;
 }
-.portfolio-list{
-    display: flex;
-    flex-direction: column;
-}
+
 .portfolio-list .portfolio-item{
     display: flex;
     flex-direction: row;
