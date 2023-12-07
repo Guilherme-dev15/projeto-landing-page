@@ -58,7 +58,6 @@ const pauseSVG = `
     <path d="M8 5V19M16 5V19" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `
-
 // Variável para controlar se o vídeo já foi iniciado
 let videoStarted = false;
 

@@ -129,50 +129,53 @@ body {
     background-color: #000000;
 }
 
-.services-container{
+.services__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0.5rem;
+    margin: 0;
 }
-
-.services-container p:nth-child(1) {
+.services__container p:nth-child(1) {
     margin: 4rem 0 5rem 0;
     font-size: 4rem;
     text-align: center;
 }
 
-.services-container ul,
-.container-portfolio-cards ul {
+.services__container .services__list,
+.portfolio__cards ul {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     list-style-type: none;
 }
 
-.services-container ul li {
+.services__container .services__list .services__item {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 4rem 3.5rem;
     gap: 2rem;
-    height: 35.1rem;
+    height: 40rem;
     list-style-type: none;
     background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 0, 0) 0.1%, #f3b700 99.8%);
-    color: #FFFFFF;
+    color: #ffffff;
     border-radius: 5rem;
 }
 
-.services-container ul li h1 {
+.services__container .services__list .services__item h1 {
     font-size: 4rem;
 }
 
-.services-container ul li p {
+.services__container .services__list .services__item p {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 1.5;
     font-size: 1.5rem;
+}
+.services__container .services__list svg {
+    width: 80px;
+    height: 80px;
 }
 
 .portfolio {
@@ -184,7 +187,7 @@ body {
     gap: 4rem;
 }
 
-.portfolio-cards {
+.videos-carousel--client {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -193,6 +196,7 @@ body {
 .portfolio-list{
     display: flex;
     flex-direction: column;
+    gap: 2.5rem;
 }
 .portfolio-list .portfolio-item{
     display: flex;
@@ -209,25 +213,25 @@ body {
     border-radius: 4rem;
 }
 
-.portfolio-cards .portfolio-item p {
+.videos-carousel--client .portfolio-item p {
     font-size: 1.6rem;
     letter-spacing: 1.2;
 }
 
-.portfolio-cards .portfolio-item h1 {
+.videos-carousel--client .portfolio-item h1 {
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 1.2;
 }
 
 .portfolio-informations h1,
-.content-portfolio h1{
+.content-portfolio__title--client{
     font-size: 5rem;
     font-weight: 400;
 }
 
 .portfolio p,
-.content-portfolio p {
+.content-portfolio__text--client {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 1.5;
@@ -235,7 +239,7 @@ body {
 }
 
 .portfolio button,
-.content-portfolio button {
+.content-portfolio__button--client {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,11 +254,12 @@ body {
     cursor: pointer;
 }
 
-.portfolio button button:hover,
-.content-portfolio button:hover {
+.portfolio button:hover,
+.content-portfolio__button--client:hover {
     background-color: #f3b600bd;
 }
 
+/*Section Portifolio Client*/
 /*Section*/
 .portfolio-client {
     position: relative;
@@ -332,6 +337,8 @@ body {
 }
 
 
+
+
 /* Buttons control
 .previous-next-control button {
     display: flex;
@@ -345,7 +352,7 @@ body {
 }
 
  Estilos para os controles de vídeo 
-.control-video p {
+.videos-carousel__controls--client p {
     font-size: 1.8rem;
     font-weight: 700;
     width: 11rem;
