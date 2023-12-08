@@ -467,7 +467,6 @@ body {
 .data-contact li {
     list-style-type: none;
 }
-
 .data-contact li a {
     display: flex;
     flex-direction: row;
@@ -475,7 +474,7 @@ body {
     align-items: center;
     gap: 1rem;
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
 
 ul.contact-list {
