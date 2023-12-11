@@ -18,38 +18,12 @@ body {
     color: #fff;
 }
 
-.header__nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    margin-top: 2rem;
-}
-
-/* Header Styles */
-.header {
-    padding: 2rem;
-}
-
-.header__menu-icon {
-    cursor: pointer;
-    display: flex;
-    position: relative;
-    z-index: 2;
-}
-
-.header__logo {
-    width: 4.8rem;
-    height: 4.8rem;
-}
-
 /* Home Section Styles */
 .home__container-introduction {
-    position: relative;
     display: flex;
     height: 100%;
     flex-direction: column;
-    padding: 20px;
+    padding: 4rem;
 }
 
 .home__container-introduction {
@@ -110,20 +84,7 @@ body {
 }
 
 .home__logo-background {
-    position: absolute;
-    height: 100%;
-    z-index: -1;
-    top: 0;
-    left: 0;
-}
-
-.home__logo-background img {
-    max-width: 100%;
-    height: 100%;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    object-fit: cover;
+    display: flex;
 }
 
 /* Services Information Section */
@@ -212,8 +173,8 @@ body {
     gap: 2rem;
     color: #FFFFFF;
     border-radius: 4rem;
-    
-    
+
+
 }
 
 .portfolio-list .portfolio-item {
@@ -223,7 +184,7 @@ body {
     list-style-type: none;
     width: 100%;
     height: 15.4rem;
-    
+
     /*
      padding: 4rem 3.5rem;
     gap: 2rem;
@@ -233,9 +194,11 @@ body {
     border-radius: 4rem;
     */
 }
-.portfolio-item iframe{
+
+.portfolio-item iframe {
     border-radius: 2rem;
 }
+
 .videos-carousel--client .portfolio-item p {
     font-size: 1.6rem;
     letter-spacing: 1.2;
@@ -467,6 +430,7 @@ body {
 .data-contact li {
     list-style-type: none;
 }
+
 .data-contact li a {
     display: flex;
     flex-direction: row;
@@ -561,7 +525,7 @@ footer {
     text-align: center;
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsivenes 768px */
 @media screen and (max-width: 768px) {
 
     /* Estilos para telas menores */
@@ -569,8 +533,33 @@ footer {
         display: block;
     }
 
-    #menu-nav {
+    .header__nav {
         display: none;
+    }
+
+    .header__nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+
+    /* Header Styles */
+    .header {
+        padding: 2rem;
+    }
+
+    .header__menu-icon {
+        cursor: pointer;
+        display: flex;
+        position: relative;
+        z-index: 2;
+    }
+
+    .header__logo {
+        width: 4.8rem;
+        height: 4.8rem;
     }
 
     .header__collapse-menu.opened {
@@ -631,4 +620,159 @@ footer {
         padding-right: 0;
     }
 
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .header__nav-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 4.8rem;
+    }
+
+    nav#menu-nav {
+        display: flex;
+        align-items: center;
+        gap: 3.5rem;
+    }
+
+    ul.header__menu-nav {
+        display: flex;
+        align-items: center;
+        gap: 3.5rem;
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .header__menu-icon,
+    .header__collapse-menu {
+        display: none;
+    }
+
+    .header__language {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .header__contact-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 999px;
+        border: solid 1px #f3b700;
+        height: 4rem;
+        width: 15rem;
+        color: #FFF;
+        font-size: 1.5rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .header__contact-button:hover {
+        background-color: #f3b700;
+        transition: .3s;
+    }
+
+    /*Section Contact*/
+    .container-contact-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem;
+        gap: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .header__nav-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 4.8rem;
+    }
+
+    nav#menu-nav {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    ul.header__menu-nav {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .header__menu-icon,
+    .header__collapse-menu {
+        display: none;
+    }
+
+    .header__language {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .header__contact-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 999px;
+        border: solid 1px #f3b700;
+        height: 4rem;
+        width: 15rem;
+        color: #FFF;
+        font-size: 1.82rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .header__contact-button:hover {
+        background-color: #f3b700;
+        transition: .3s;
+    }
+    .home__container-introduction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 3.5rem;
+    }
+
+    .home__container-actions{
+        flex-direction: row;
+    }
+    .home__container-actions button,
+    .home__container-actions a {
+        flex-direction: row;
+        width: 15rem;
+    }
+    .home__introduction-heading {
+        font-size: 6rem;
+        display: flex;
+        flex-wrap: nowrap;
+        
+        font-family: 'codec-pro-ultra', sans-serif;
+        font-weight: 800;
+    }
+    .home__logo-background{
+        
+    }
 }
