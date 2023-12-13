@@ -50,7 +50,7 @@ body {
 .home__introduction-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 2;
     letter-spacing: 0.5px;
     text-align: start;
@@ -73,7 +73,7 @@ body {
     height: 5rem;
     width: 100%;
     color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
@@ -112,14 +112,13 @@ body {
 .services__container .services__list {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 3.6rem;
     list-style-type: none;
 }
 
 .services__container .services__list .services__item {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     padding: 4rem 3.5rem;
     gap: 2rem;
     height: 40rem;
@@ -130,14 +129,15 @@ body {
 }
 
 .services__container .services__list .services__item h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+    line-height: 3.2rem;
 }
 
 .services__container .services__list .services__item p {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    line-height: 1.5;
-    font-size: 1.5rem;
+    line-height: 2rem;
+    font-size: 1.6rem;
 }
 
 .services__container .services__list svg {
@@ -151,20 +151,14 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .portfolio-cards {
     width: 100%;
 }
 
-.videos-carousel--client {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 4rem;
-}
+
 
 .portfolio-list {
     display: flex;
@@ -184,19 +178,19 @@ body {
     list-style-type: none;
     width: 100%;
     height: 15.4rem;
-
-    /*
-     padding: 4rem 3.5rem;
-    gap: 2rem;
-    height: 15rem;
-    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 0, 0) 0.1%, #f3b700 99.8%);
-    color: #FFFFFF;
-    border-radius: 4rem;
-    */
 }
 
 .portfolio-item iframe {
     border-radius: 2rem;
+}
+
+
+
+.videos-carousel--client {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
 }
 
 .videos-carousel--client .portfolio-item p {
@@ -222,7 +216,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 1.5;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 0 0.2rem;
 }
 
@@ -238,7 +232,7 @@ body {
     height: 6rem;
     width: 20rem;
     color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     cursor: pointer;
 }
@@ -300,105 +294,6 @@ body {
 
 }
 
-/* Buttons control
-.previous-next-control button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4rem;
-    width: 4rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 999rem;
-}
-
- Estilos para os controles de vídeo 
-.videos-carousel__controls--client p {
-    font-size: 1.8rem;
-    font-weight: 700;
-    width: 11rem;
-}
-
-/* Estilos para os controles de vídeo 
-.play-video,
-.next-video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f3b700;
-}
-
-.previous-video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    background-color: #000000;
-}
-
-.previous-next-control,
-.play-control {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.previous-next-control svg,
-.play-control svg {
-    width: 50px;
-    /* Ajuste a largura conforme necessário 
-    height: 50px;
-    /* Ajuste a altura conforme necessário 
-}*/
-/* Estilos para o reprodutor de áudio */
-.audio-player {
-    text-align: center;
-    max-width: 100px;
-}
-
-.album-container {
-    position: relative;
-    display: inline-block;
-}
-
-/* Estilo para a imagem do álbum */
-.album-cover {
-    width: 80px;
-    display: block;
-    border-radius: 20px;
-}
-
-/* Estilo para o botão de play 
-.play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 25px;
-    height: 25px;
-    background-image: url('../images/play-svgrepo-com.svg');
-    background-size: cover;
-    cursor: pointer;
-    z-index: 1;
-}
-*/
-/* Estilos para a barra de progresso */
-.progress-bar {
-    width: 100%;
-    height: 10px;
-    background-color: #ccc;
-    margin-top: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.progress {
-    height: 100%;
-    background-color: #f3b700;
-    width: 0;
-    transition: width 0.3s ease-in-out;
-}
 
 /*Section Contact*/
 .contact-informations {
@@ -448,7 +343,7 @@ ul.contact-list {
 }
 
 .data-contact li a {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
@@ -490,7 +385,7 @@ ul.contact-list {
 .form-group textarea {
     width: 100%;
     height: 6rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
     border: none;
     padding: 1rem;
@@ -620,6 +515,10 @@ footer {
         padding-right: 0;
     }
 
+    .home__logo-background {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
@@ -629,7 +528,7 @@ footer {
         align-content: center;
         justify-content: space-between;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: 700;
         padding: 4.8rem;
     }
@@ -669,7 +568,7 @@ footer {
         height: 4rem;
         width: 15rem;
         color: #FFF;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: 700;
         cursor: pointer;
     }
@@ -698,9 +597,8 @@ footer {
         align-content: center;
         justify-content: space-between;
         align-items: center;
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 700;
-        padding: 4.8rem;
     }
 
     nav#menu-nav {
@@ -747,6 +645,22 @@ footer {
         background-color: #f3b700;
         transition: .3s;
     }
+
+    body {
+        padding: 40px 23px 66px;
+        font-size: 1.6rem;
+    }
+
+    main,
+    header {
+        max-width: 140rem;
+        margin: 0 auto;
+    }
+    .home__container-introduction,
+    .portfolio-cards, .services__container{
+        padding-top: 6.9rem;
+        padding-bottom: 8rem
+    }
     .home__container-introduction {
         display: flex;
         justify-content: center;
@@ -754,25 +668,72 @@ footer {
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 3.5rem;
+        padding: 0;
     }
 
-    .home__container-actions{
+    .home__container-actions {
         flex-direction: row;
     }
+
     .home__container-actions button,
     .home__container-actions a {
         flex-direction: row;
         width: 15rem;
     }
+
     .home__introduction-heading {
         font-size: 6rem;
         display: flex;
         flex-wrap: nowrap;
-        
+
         font-family: 'codec-pro-ultra', sans-serif;
         font-weight: 800;
     }
-    .home__logo-background{
-        
+
+    .home__logo-background {
+        opacity: 0;
     }
+
+    /* Services Information Section */
+    .services {
+        padding: 0;
+    }
+
+    .services__container .services__list {
+        flex-direction: row;
+        width: 100%;
+
+    }
+
+    .services__container .services__list .services__item {
+        width: 32.5rem;
+        height: 26.6rem;
+        padding: 4.4rem 4.9rem 4.6rem 2.8rem;
+    }
+    .services__container p:nth-child(1){
+        margin: 6.9rem 0 7.8rem 0;
+    }
+    .portfolio {
+        flex-direction: row;
+    }
+
+    .portfolio-cards {
+        padding-top: 6.9rem;
+    }
+
+    .portfolio-list {}
+
+    .portfolio-list .portfolio-item {
+        height: 18.4rem;
+    }
+
+    .portfolio-item iframe {}
+
+    .portfolio-cards__content h1 + p{
+        display: flex;
+        flex-direction: column;
+        max-width: 50rem;
+        max-height: 28.4rem;
+    }
+
 }
