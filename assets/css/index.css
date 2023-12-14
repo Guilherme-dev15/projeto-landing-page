@@ -656,11 +656,14 @@ footer {
         max-width: 140rem;
         margin: 0 auto;
     }
+
     .home__container-introduction,
-    .portfolio-cards, .services__container{
+    .portfolio-cards,
+    .services__container {
         padding-top: 6.9rem;
         padding-bottom: 8rem
     }
+
     .home__container-introduction {
         display: flex;
         justify-content: center;
@@ -685,7 +688,6 @@ footer {
         font-size: 6rem;
         display: flex;
         flex-wrap: nowrap;
-
         font-family: 'codec-pro-ultra', sans-serif;
         font-weight: 800;
     }
@@ -710,30 +712,53 @@ footer {
         height: 26.6rem;
         padding: 4.4rem 4.9rem 4.6rem 2.8rem;
     }
-    .services__container p:nth-child(1){
+
+    .services__container p:nth-child(1) {
         margin: 6.9rem 0 7.8rem 0;
     }
+
     .portfolio {
         flex-direction: row;
+
     }
 
     .portfolio-cards {
         padding-top: 6.9rem;
+        max-width: 80rem;
     }
 
-    .portfolio-list {}
+    .portfolio-list {
+        width: 100%;
+    }
 
     .portfolio-list .portfolio-item {
-        height: 18.4rem;
+        height: 17.4rem;
+        width: 60rem;
     }
 
-    .portfolio-item iframe {}
-
-    .portfolio-cards__content h1 + p{
+    .portfolio-cards__content {
+        margin: 0 9rem;
         display: flex;
         flex-direction: column;
-        max-width: 50rem;
-        max-height: 28.4rem;
+        gap: 3.7rem;
     }
 
+    /*Section Portifolio Client YOUTUBE*/
+    .portfolio-information-client {
+        padding: 0;
+    }
+
+    .portfolio-information-client__container {}
+
+    .portfolio-information-client__content {}
+
+    .portfolio-information-client__videos-carousel {}
+
+    .portfolio-information-client__video-slide {}
+
+    .portfolio-information-client__video-slide .portfolio-information-client__video-slide-iframe {
+        height: 65rem;
+    }
+
+    .portfolio-music-client {}
 }
