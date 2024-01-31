@@ -208,17 +208,14 @@ body {
     height: 15.4rem;
 }
 
-.portfolio-item iframe {
-    border-radius: var(--border-radius-medium);
-}
 
-.videos-carousel--client {
+.portfolio-information-client__content{
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    gap: var(--spacing-large);
+    align-items: center;
+    
 }
-
 .videos-carousel--client .portfolio-item p,
 .videos-carousel--client .portfolio-item h1 {
     font-size: var(--font-size-medium);
@@ -267,58 +264,6 @@ body {
 .portfolio button:hover,
 .portfolio-information-client__content button:hover {
     background-color: #f3b600bd;
-}
-
-/*Section Portifolio Client*/
-.portfolio-information-client {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.portfolio-information-client__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    gap: 4rem;
-}
-
-.portfolio-information-client__content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--font-size-title);
-    align-items: center;
-}
-
-.portfolio-information-client__videos-carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
-
-.portfolio-information-client__video-slide {
-    flex: 0 0 auto;
-    width: calc(100% - 1rem);
-    /* Subtraindo a margem esquerda para manter 100% de largura */
-    margin-left: 10px;
-    scroll-snap-align: start;
-}
-
-.portfolio-information-client__video-slide .portfolio-information-client__video-slide-iframe {
-    height: 40rem;
-    width: 100%;
-    border-radius: 5rem;
-}
-
-.portfolio-music-client {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-
 }
 
 /*Section Contact*/
@@ -843,7 +788,27 @@ footer {
 }
 
 section {
-    margin-top: 5rem;
+    margin-top: 10.5rem;
     margin-bottom: 5rem;
     padding: 2rem;
 }
+
+.portfolio-information-client__videos-carousel::-webkit-scrollbar {
+    height: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ececec;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f3b700;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+}
+
+
+
+
+

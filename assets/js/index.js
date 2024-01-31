@@ -9,19 +9,16 @@ function toggleCollapseMenu() {
         openMenu(menu); // Abre o menu se estiver fechado
     }
 }
-
 // Função para abrir o menu lateral
 function openMenu(menu) {
     menu.style.width = "250px";
     menu.classList.add("opened"); // Adiciona a classe ao abrir o menu
 }
-
 // Função para fechar o menu lateral
 function closeMenu(menu) {
     menu.style.width = "0";
     menu.classList.remove("opened"); // Remove a classe ao fechar o menu
 }
-
 // Evento quando o DOM estiver pronto
 document.addEventListener('DOMContentLoaded', function () {
     // Seção de áudio
@@ -41,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
         progressBar.style.width = progress + '%';
     });
 });
-
 
 // Seção de vídeo
 const btnPlayVideo = document.getElementById('btn-play-video');
@@ -91,6 +87,3 @@ video.addEventListener("ended", function () {
     playIcon.innerHTML = playSVG;
     textPlayVideo.textContent = 'Play Video';
 });
-
-
-
