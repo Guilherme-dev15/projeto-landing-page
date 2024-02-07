@@ -6,18 +6,21 @@
     height: 100%;
     display: flex;
     transition: transform 0.5s ease-in-out;
+    position: relative;
+    /* Adicionado para posicionar os radio buttons relativamente */
 }
 
 .slides input {
     display: none;
 }
 
-
 .slide {
     width: 100%;
     position: relative;
-    box-sizing: border-box; /* Adicionado para incluir a borda no tamanho total do elemento */
+    box-sizing: border-box;
+    /* Adicionado para incluir a borda no tamanho total do elemento */
 }
+
 .slide iframe {
     width: 100%;
     height: 100%;
@@ -26,11 +29,14 @@
 .manual-navigation,
 .navigation-auto {
     position: absolute;
-    width: 100%; /* Ajustado para ocupar 100% da largura do contêiner pai */
-    margin-top: 50%;
+    width: 100%;
+    z-index: 1;
     display: flex;
     justify-content: center;
+    bottom: 20px;
+    /* Ajustado para posicionar na parte inferior da div */
 }
+
 
 .manual-btn,
 .navigation-auto div {
@@ -52,22 +58,25 @@
 }
 
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
+    transition: 1s;
     margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
+    transition: 1s;
     margin-left: -100%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
+    transition: 1s;
     margin-left: -200%;
 }
 
 
-#radio1:checked ~ .navigation-auto .auto-btn1,
-#radio2:checked ~ .navigation-auto .auto-btn2,
-#radio3:checked ~ .navigation-auto .auto-btn3 {
+#radio1:checked~.navigation-auto .auto-btn1,
+#radio2:checked~.navigation-auto .auto-btn2,
+#radio3:checked~.navigation-auto .auto-btn3 {
     background-color: white;
 }
 
@@ -90,6 +99,7 @@
 
 .portfolio-information-client__videos-carousel {
     display: flex;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
@@ -97,16 +107,18 @@
 
 .portfolio-information-client__video-slide {
     flex: 0 0 auto;
+    height: 100%;
     width: calc(100% - 1rem);
     margin-left: 10px;
     scroll-snap-align: start;
 }
 
 .portfolio-information-client__video-slide-iframe {
-    height: 40rem;
-    width: 100%;
+    height: 50rem;
+    width: 50rem;
     border-radius: 5rem;
 }
+
 /*
 .portfolio-music-client {
     display: flex;
@@ -115,13 +127,27 @@
     width: 100%;
 }
 */
+
 @media only screen and (max-width: 767px) {
     .portfolio-information-client__videos-carousel {
         overflow-x: auto;
         overflow-y: hidden;
         scroll-snap-type: x mandatory;
     }
-    .manual-navigation, .navigation-auto {
+
+    .manual-navigation,
+    .navigation-auto {
         display: none;
     }
+
+    .portfolio-information-client__video-slide {
+        height: 400px;
     }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .portfolio-information-client__video-slide {
+
+        height: 50rem;
+    }
+}

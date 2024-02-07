@@ -41,6 +41,17 @@ body {
 }
 
 /* Home Section Styles */
+
+.header__language span svg:hover {
+    fill: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+ul.header__menu-nav li:hover {
+    text-decoration: underline;
+    text-decoration-color: #f3b600;
+    text-decoration-thickness: 0.3rem;
+}
 .home__container-introduction {
     display: flex;
     flex-direction: column;
@@ -263,7 +274,8 @@ body {
 
 .portfolio button:hover,
 .portfolio-information-client__content button:hover {
-    background-color: #f3b600bd;
+    background-color: #f3b600;
+    transition: 0.5s;
 }
 
 /*Section Contact*/
@@ -371,7 +383,7 @@ ul.contact-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: var(--spacing-large);
+    height: 6rem;
     width: 20rem;
     border: #f3b700 1px solid;
     color: #FFFFFF;
@@ -383,6 +395,7 @@ ul.contact-list {
 }
 .container-form form button:hover {
     cursor: pointer;
+    transition: 0.5s;
     background-color: #f3b700;
 }
 
@@ -480,6 +493,7 @@ footer {
 
     .header__collapse-menu-list a:hover {
         color: #f1f1f1;
+        transition: 0.5s;
     }
 
     .header__collapse-menu.opened {
@@ -558,7 +572,7 @@ footer {
 
     .header__contact-button:hover {
         background-color: #f3b700;
-        transition: .3s;
+        transition: 0.3s;
     }
     .home__container-actions {
         width: 100%;
@@ -798,14 +812,16 @@ section {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #ececec;
-    border-radius: 10px;
+    display: none;
+    /*background-color: #ececec;
+    border-radius: 10px;*/
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #f3b700;
+    display: none;
+    /*background-color: #f3b600;
     border-radius: 10px;
-    border: 1px solid #d1d1d1;
+    border: 1px solid #d1d1d1;*/
 }
 
 
